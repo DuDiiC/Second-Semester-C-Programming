@@ -9,8 +9,6 @@ int main(void) {
     fgets(linia, 60, stdin);
     while(strlen(linia) != 2 || linia[0] != '#') {
 
-        char *slowo =
-
         printf("%s\n", linia);
 
 
