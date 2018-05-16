@@ -12,13 +12,13 @@ typedef struct LineSegment {
     int A, B, C; /* coefficients of the general form of a square function */
 } LineSegment;
 
-int lineSegmentLength(Point A, Point B);
+int lineSegmentLength(Point A, Point B); /**/
 
-void coefficients(LineSegment *line);
+void coefficients(LineSegment *line); /**/
 
-void changePoints(Point *A, Point *B);
+void changePoints(Point *A, Point *B); /**/
 
-int whereIsPointC(Point A, Point B, Point C);
+int whereIsPointC(Point A, Point B, Point C); /*?*/
 
 int lineSegmentIntsect(LineSegment first, LineSegment second);
 
@@ -67,11 +67,21 @@ void coefficients(LineSegment *line) {
 
 int whereIsPointC(Point A, Point B, Point C) {
     /*zwracam odpowiednio:
-     *-1 gdy lezy na lewym krancu
-     *0 gdy lezy pomiedzy
-     *1 gdy lezy na prawym krancu
+     *-1 gdy lezy po "lewej" stronie
+     *0 gdy lezy na
+     *1 gdy lezy po "prawej" stronie
      */
-    return 0;
+    LineSegment line;
+    int side;
+
+    line.pointA = A;
+    line.pointB = B;
+    coefficients(&line);
+
+    side = line.A*C.x + line.B*C.y + line.C;
+    if(side < 0) return -1;
+    if(side == 0) return 0;
+    return 1;
 }
 
 int lineSegmentIntsect(LineSegment first, LineSegment second) {
