@@ -24,7 +24,6 @@ int main(void) {
     scanf("%d", &cases);
 
     int x[4], y[4], bok[4], przekatna1, przekatna2, figura;
-
     for(i = 1; i <= cases; ++i) {
 
         scanf("%d %d", &x[0], &y[0]);
