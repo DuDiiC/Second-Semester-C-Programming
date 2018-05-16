@@ -1,5 +1,4 @@
 #include <stdio.h>
-#include <math.h>
 
 typedef struct Point {
     int x;
@@ -8,7 +7,7 @@ typedef struct Point {
 
 typedef struct lineSegment {
     Point point;
-    double length;
+    int length; /* squared, because it will be Integer */
 } lineSegment;
 
 void changePoints(Point *A, Point *B) {
@@ -43,15 +42,25 @@ int parallelLines(lineSegment first, lineSegment second) {
     return 0;
 }
 
-double lineSegmentLength(Point A, Point B) {
-    /*liczy dlugosc odcinka*/
-    double length;
+int lineSegmentLength(Point A, Point B) {
+    int length;
+
+    length = (B.x - A.x)*(B.x - A.x) + (B.y - A.y)*(B.y - A.y);
 
     return length;
 }
 
 int main(void) {
 
+/*test*/
+    Point pierwszy;
+    Point drugi;
+    pierwszy.x = 2;
+    pierwszy.y = 5;
+    drugi.x = 5;
+    drugi.y = 9;
+
+    printf("Dlugosc odcinka do kwadratu to: %d", lineSegmentLength(pierwszy, drugi));
 
     return 0;
 }
