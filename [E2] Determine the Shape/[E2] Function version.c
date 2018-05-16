@@ -15,23 +15,23 @@ typedef struct Punkt {
 typedef struct Odcniek {
     Punkt PunktA;
     Punkt PunktB;
-    int length; /* squared, because it will be Integer */
-    int A, B, C; /* coefficients of the general form of a square function */
+    int dlugosc; /* zostawiam kwadrat => zostaje typ int */
+    int A, B, C; /* wspolczynniki prostej Ax + By + C = 0 */
 } Odcinek;
 
-int lineSegmentLength(Punkt A, Punkt B); /**/
+int dlugoscOdcinka(Punkt A, Punkt B); /**/
 
-void coefficients(Odcinek *line); /**/
+void wyliczWspolczynniki(Odcinek *prosta); /**/
 
-void changePoints(Punkt *A, Punkt *B); /**/
+void zamienPunkty(Punkt *A, Punkt *B); /**/
 
-int whereIsPointC(Punkt A, Punkt B, Punkt C); /*?*/
+int gdziePunktC(Punkt A, Punkt B, Punkt C); /*?*/
 
-int lineSegmentIntsect(Odcinek first, Odcinek second);
+int czySiePrzecinaja(Odcinek pierwszy, Odcinek drugi); /*?*/
 
-int perpendicularLines(Odcinek first, Odcinek second);
+int czyProstopadle(Odcinek pierwszy, Odcinek drugi); /*?*/
 
-int parallelLines(Odcinek first, Odcinek second);
+int czyRownolegle(Odcinek pierwszy, Odcinek drugi); /*?*/
 
 int main(void) {
 
@@ -46,62 +46,65 @@ int main(void) {
     prosta.PunktA = pierwszy;
     prosta.PunktB = drugi;
 
-    coefficients(&prosta);
+    wyliczWspolczynniki(&prosta);
 
     printf("%d, %d, %d", prosta.A, prosta.B, prosta.C);
 
     return 0;
 }
 
-int lineSegmentLength(Punkt A, Punkt B) {
-    int length;
-    length = (B.x - A.x)*(B.x - A.x) + (B.y - A.y)*(B.y - A.y);
-    return length;
+int dlugoscOdcinka(Punkt A, Punkt B) {
+    int dlugosc;
+    dlugosc = (B.x - A.x)*(B.x - A.x) + (B.y - A.y)*(B.y - A.y);
+    return dlugosc;
 }
 
-void changePoints(Punkt *A, Punkt *B) {
+void zamienPunkty(Punkt *A, Punkt *B) {
     Punkt temp;
     temp = *A;
     *A = *B;
     *B = temp;
 }
 
-void coefficients(Odcinek *line) {
-    line->A = line->PunktA.y - line->PunktB.y;
-    line->B = line->PunktB.x - line->PunktA.x;
-    line->C = (line->PunktA.x * line->PunktB.y) - (line->PunktB.x * line->PunktA.y);
+void wyliczWspolczynniki(Odcinek *prosta) {
+    prosta->A = prosta->PunktA.y - prosta->PunktB.y;
+    prosta->B = prosta->PunktB.x - prosta->PunktA.x;
+    prosta->C = (prosta->PunktA.x * prosta->PunktB.y) - (prosta->PunktB.x * prosta->PunktA.y);
 }
 
-int whereIsPointC(Punkt A, Punkt B, Punkt C) {
+int gdziePunktC(Punkt A, Punkt B, Punkt C) {
     /*zwracam odpowiednio:
      *-1 gdy lezy po "lewej" stronie
-     *0 gdy lezy na
+     *0 gdy lezy na prostej
      *1 gdy lezy po "prawej" stronie
      */
-    Odcinek line;
-    int side;
+    Odcinek prosta;
+    int strona;
 
-    line.PunktA = A;
-    line.PunktB = B;
-    coefficients(&line);
+    prosta.PunktA = A;
+    prosta.PunktB = B;
+    wyliczWspolczynniki(&prosta);
 
-    side = line.A*C.x + line.B*C.y + line.C;
-    if(side < 0) return -1;
-    if(side == 0) return 0;
+    strona = prosta.A*C.x + prosta.B*C.y + prosta.C;
+    if(strona < 0) return -1;
+    if(strona == 0) return 0;
     return 1;
 }
 
-int lineSegmentIntsect(Odcinek first, Odcinek second) {
-    /*sprawdza czy dwa odcinki sie przecinaja, 0 jesli nie, 1 jesli tak*/
+int czySiePrzecinaja(Odcinek pierwszy, Odcinek drugi) {
+    /*0 jesli nie, 1 jesli tak*/
+    if(pierwszy.A*drugi.A + pierwszy.B*drugi.B != 0) return 1;
     return 0;
 }
 
-int perpendicularLines(Odcinek first, Odcinek second) {
-    /*sprawdza czy dwa odcinki sa prostopadle, 0 jesli nie, 1 jesli tak*/
+int czyProstopadle(Odcinek pierwszy, Odcinek drugi) {
+    /*0 jesli nie, 1 jesli tak*/
+    if(pierwszy.A*drugi.A + pierwszy.B*drugi.B == 0) return 1;
     return 0;
 }
 
-int parallelLines(Odcinek first, Odcinek second) {
-    /*sprawdza czy dwa odcinki sa rownolegle, 0 jesli nie, 1 jesli tak*/
+int czyRownolegle(Odcinek pierwszy, Odcinek drugi) {
+    /*0 jesli nie, 1 jesli tak*/
+    if(pierwszy.A*drugi.B - drugi.A*pierwszy.B == 0) return 1;
     return 0;
 }
