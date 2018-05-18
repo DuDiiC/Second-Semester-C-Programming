@@ -25,13 +25,13 @@ void wyliczWspolczynniki(Odcinek *prosta); /**/
 
 void zamienPunkty(Punkt *A, Punkt *B); /**/
 
-int gdziePunktC(Punkt A, Punkt B, Punkt C); /*?*/
+int gdziePunktC(Punkt A, Punkt B, Punkt C); /**/
 
-int czySiePrzecinaja(Odcinek pierwszy, Odcinek drugi); /*?*/
+int czySiePrzecinaja(Odcinek pierwszy, Odcinek drugi); /*!*/
 
-int czyProstopadle(Odcinek pierwszy, Odcinek drugi); /*?*/
+int czyProstopadle(Odcinek pierwszy, Odcinek drugi); /**/
 
-int czyRownolegle(Odcinek pierwszy, Odcinek drugi); /*?*/
+int czyRownolegle(Odcinek pierwszy, Odcinek drugi); /**/
 
 int main(void) {
 
@@ -48,7 +48,66 @@ int main(void) {
 
     wyliczWspolczynniki(&prosta);
 
-    printf("%d, %d, %d", prosta.A, prosta.B, prosta.C);
+    /*-------*/
+
+    Punkt pierwszy2;
+    Punkt drugi2;
+    pierwszy2.x = 0;
+    pierwszy2.y = 3;
+    drugi2.x = 3;
+    drugi2.y = 7;
+
+    Odcinek prosta2;
+    prosta2.PunktA = pierwszy2;
+    prosta2.PunktB = drugi2;
+
+    wyliczWspolczynniki(&prosta2);
+
+    /*-------*/
+
+    Punkt pierwszy3;
+    Punkt drugi3;
+    pierwszy3.x = 0;
+    pierwszy3.y = 1;
+    drugi3.x = -4;
+    drugi3.y = 4;
+
+    Odcinek prosta3;
+    prosta3.PunktA = pierwszy3;
+    prosta3.PunktB = drugi3;
+
+    wyliczWspolczynniki(&prosta3);
+
+    /*-------*/
+
+    Punkt pierwszy4;
+    Punkt drugi4;
+    pierwszy4.x = 0;
+    pierwszy4.y = 3;
+    drugi4.x = 5;
+    drugi4.y = 1;
+
+    Odcinek prosta4;
+    prosta4.PunktA = pierwszy4;
+    prosta4.PunktB = drugi4;
+
+    wyliczWspolczynniki(&prosta4);
+
+    /*-------*/
+
+    Punkt C1, C2, C3, C4, C5;
+    C1.x = 7; C1.y = 4;
+    C2.x = 2; C2.y = 1;
+    C3.x = 0; C3.y = 5;
+    C4.x = -2; C4.y = 1;
+    C5.x = -4; C5.y = -3;
+
+    /*-------*/
+
+    printf("Czy rownolegle pierwsza z druga: %d\nPierwsza z trzecia: %d\nPierwsza z czwarta: %d\n", czyRownolegle(prosta, prosta2), czyRownolegle(prosta, prosta3), czyRownolegle(prosta, prosta4));
+    printf("Czy prostopadle pierwsza z druga: %d\nPierwsza z trzecia: %d\nPierwsza z czwarta: %d\n", czyProstopadle(prosta, prosta2), czyProstopadle(prosta, prosta3), czyProstopadle(prosta, prosta4));
+    printf("Czy sie przecinaja pierwsza z druga: %d\nPierwsza z trzecia: %d\nPierwsza z czwarta: %d\n", czySiePrzecinaja(prosta, prosta2), czySiePrzecinaja(prosta, prosta3), czySiePrzecinaja(prosta, prosta4)); /* èLE */
+    printf("Punkt lezy: %d, %d, %d, %d, %d", gdziePunktC(prosta.PunktA, prosta.PunktB, C1), gdziePunktC(prosta.PunktA, prosta.PunktB, C2), gdziePunktC(prosta.PunktA, prosta.PunktB, C3), gdziePunktC(prosta.PunktA, prosta.PunktB, C4), gdziePunktC(prosta.PunktA, prosta.PunktB, C5));
 
     return 0;
 }
@@ -74,9 +133,9 @@ void wyliczWspolczynniki(Odcinek *prosta) {
 
 int gdziePunktC(Punkt A, Punkt B, Punkt C) {
     /*zwracam odpowiednio:
-     *-1 gdy lezy po "lewej" stronie
+     *-1 gdy lezy po "prawej" stronie
      *0 gdy lezy na prostej
-     *1 gdy lezy po "prawej" stronie
+     *1 gdy lezy po "lewej" stronie
      */
     Odcinek prosta;
     int strona;
