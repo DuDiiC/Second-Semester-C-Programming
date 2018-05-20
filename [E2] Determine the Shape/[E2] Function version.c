@@ -27,7 +27,7 @@ void zamienPunkty(Punkt *A, Punkt *B); /**/
 
 int gdziePunktC(Punkt A, Punkt B, Punkt C); /**/
 
-int czySiePrzecinaja(Odcinek pierwszy, Odcinek drugi); /*!*/
+int czySiePrzecinaja(Odcinek pierwszy, Odcinek drugi); /**/
 
 int czyProstopadle(Odcinek pierwszy, Odcinek drugi); /**/
 
@@ -131,6 +131,11 @@ void wyliczWspolczynniki(Odcinek *prosta) {
     prosta->C = (prosta->PunktA.x * prosta->PunktB.y) - (prosta->PunktB.x * prosta->PunktA.y);
 }
 
+/* sposob implementacji kolejnych funkcji, opieralem na informacjach ze zrodel:
+ * http://www.math.us.edu.pl/pgladki/faq/node102.html
+ * http://www.math.edu.pl/wzajemne-polozenie-prostych
+ */
+
 int gdziePunktC(Punkt A, Punkt B, Punkt C) {
     /*zwracam odpowiednio:
      *-1 gdy lezy po "prawej" stronie
@@ -152,7 +157,7 @@ int gdziePunktC(Punkt A, Punkt B, Punkt C) {
 
 int czySiePrzecinaja(Odcinek pierwszy, Odcinek drugi) {
     /*0 jesli nie, 1 jesli tak*/
-    if(pierwszy.A*drugi.A + pierwszy.B*drugi.B != 0) return 1;
+    if(pierwszy.A*drugi.B - drugi.A*pierwszy.B != 0) return 1;
     return 0;
 }
 
