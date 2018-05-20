@@ -12,104 +12,77 @@ typedef struct Punkt {
     int y;
 } Punkt;
 
-typedef struct Odcniek {
+typedef struct Odcinek {
     Punkt PunktA;
     Punkt PunktB;
     int dlugosc; /* zostawiam kwadrat => zostaje typ int */
     int A, B, C; /* wspolczynniki prostej Ax + By + C = 0 */
 } Odcinek;
 
-int dlugoscOdcinka(Punkt A, Punkt B); /**/
+void wczytajOdcinek(Odcinek *odcinek, Punkt A, Punkt B);
 
-void wyliczWspolczynniki(Odcinek *prosta); /**/
+int dlugoscOdcinka(Punkt A, Punkt B);
 
-void zamienPunkty(Punkt *A, Punkt *B); /**/
+void wyliczWspolczynniki(Odcinek *prosta);
 
-int gdziePunktC(Punkt A, Punkt B, Punkt C); /**/
+void zamienPunkty(Punkt *A, Punkt *B);
 
-int czySiePrzecinaja(Odcinek pierwszy, Odcinek drugi); /**/
+int gdziePunktC(Punkt A, Punkt B, Punkt C);
 
-int czyProstopadle(Odcinek pierwszy, Odcinek drugi); /**/
+int czySiePrzecinaja(Odcinek pierwszy, Odcinek drugi);
 
-int czyRownolegle(Odcinek pierwszy, Odcinek drugi); /**/
+int czyProstopadle(Odcinek pierwszy, Odcinek drugi);
+
+int czyRownolegle(Odcinek pierwszy, Odcinek drugi);
 
 int main(void) {
 
-    Punkt pierwszy;
-    Punkt drugi;
-    pierwszy.x = 2;
-    pierwszy.y = 5;
-    drugi.x = 5;
-    drugi.y = 9;
+    int testy, i;
+    scanf("%d", &testy);
 
-    Odcinek prosta;
-    prosta.PunktA = pierwszy;
-    prosta.PunktB = drugi;
+    for(i = 1; i <= testy; i++) {
+        /*wczytanie danych*/
+        Punkt pktA, pktB, pktC, pktD;
+        Odcinek bok1, bok2, bok3, bok4;
+        char *figura;
 
-    wyliczWspolczynniki(&prosta);
+        scanf("%d %d", &pktA.x, &pktA.y);
+        scanf("%d %d", &pktB.x, &pktB.y);
+        scanf("%d %d", &pktC.x, &pktC.y);
+        scanf("%d %d", &pktD.x, &pktD.y);
 
-    /*-------*/
+        wczytajOdcinek(&bok1, pktA, pktB);
+        wczytajOdcinek(&bok2, pktB, pktC);
+        wczytajOdcinek(&bok3, pktC, pktD);
+        wczytajOdcinek(&bok4, pktD, pktA);
 
-    Punkt pierwszy2;
-    Punkt drugi2;
-    pierwszy2.x = 0;
-    pierwszy2.y = 3;
-    drugi2.x = 3;
-    drugi2.y = 7;
+        /*logika wybierania*/
+        if(bok1.dlugosc == bok3.dlugosc && bok2.dlugosc == bok4.dlugosc) {
+            if(bok1.dlugosc == bok2.dlugosc) {
+                if(czyProstopadle(bok1, bok2)) figura = KWADRAT;
+                else figura = ROMB;
+            } else {
+                if(czyProstopadle(bok1, bok2) && czyProstopadle(bok3, bok4)) figura = PROSTOKAT;
+                else figura = ROWNOLEGLOBOK;
+            }
+        } else if((czyRownolegle(bok1, bok3) && !czyRownolegle(bok2, bok4)) ||
+                  (!czyRownolegle(bok1, bok3) && czyRownolegle(bok2, bok4))) {
+                figura = TRAPEZ;
+        } else figura = ZWYKLY;
 
-    Odcinek prosta2;
-    prosta2.PunktA = pierwszy2;
-    prosta2.PunktB = drugi2;
 
-    wyliczWspolczynniki(&prosta2);
-
-    /*-------*/
-
-    Punkt pierwszy3;
-    Punkt drugi3;
-    pierwszy3.x = 0;
-    pierwszy3.y = 1;
-    drugi3.x = -4;
-    drugi3.y = 4;
-
-    Odcinek prosta3;
-    prosta3.PunktA = pierwszy3;
-    prosta3.PunktB = drugi3;
-
-    wyliczWspolczynniki(&prosta3);
-
-    /*-------*/
-
-    Punkt pierwszy4;
-    Punkt drugi4;
-    pierwszy4.x = 0;
-    pierwszy4.y = 3;
-    drugi4.x = 5;
-    drugi4.y = 1;
-
-    Odcinek prosta4;
-    prosta4.PunktA = pierwszy4;
-    prosta4.PunktB = drugi4;
-
-    wyliczWspolczynniki(&prosta4);
-
-    /*-------*/
-
-    Punkt C1, C2, C3, C4, C5;
-    C1.x = 7; C1.y = 4;
-    C2.x = 2; C2.y = 1;
-    C3.x = 0; C3.y = 5;
-    C4.x = -2; C4.y = 1;
-    C5.x = -4; C5.y = -3;
-
-    /*-------*/
-
-    printf("Czy rownolegle pierwsza z druga: %d\nPierwsza z trzecia: %d\nPierwsza z czwarta: %d\n", czyRownolegle(prosta, prosta2), czyRownolegle(prosta, prosta3), czyRownolegle(prosta, prosta4));
-    printf("Czy prostopadle pierwsza z druga: %d\nPierwsza z trzecia: %d\nPierwsza z czwarta: %d\n", czyProstopadle(prosta, prosta2), czyProstopadle(prosta, prosta3), czyProstopadle(prosta, prosta4));
-    printf("Czy sie przecinaja pierwsza z druga: %d\nPierwsza z trzecia: %d\nPierwsza z czwarta: %d\n", czySiePrzecinaja(prosta, prosta2), czySiePrzecinaja(prosta, prosta3), czySiePrzecinaja(prosta, prosta4)); /* LE */
-    printf("Punkt lezy: %d, %d, %d, %d, %d", gdziePunktC(prosta.PunktA, prosta.PunktB, C1), gdziePunktC(prosta.PunktA, prosta.PunktB, C2), gdziePunktC(prosta.PunktA, prosta.PunktB, C3), gdziePunktC(prosta.PunktA, prosta.PunktB, C4), gdziePunktC(prosta.PunktA, prosta.PunktB, C5));
+        /*drukowanie wynikow*/
+        printf("Case %d: %s\n", i, figura);
+    }
 
     return 0;
+}
+
+void wczytajOdcinek(Odcinek *odcinek, Punkt A, Punkt B) {
+    odcinek->PunktA = A;
+    odcinek->PunktB = B;
+    odcinek->dlugosc = dlugoscOdcinka(A, B);
+    wyliczWspolczynniki(odcinek);
 }
 
 int dlugoscOdcinka(Punkt A, Punkt B) {
