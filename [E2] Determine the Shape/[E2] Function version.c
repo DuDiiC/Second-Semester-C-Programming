@@ -51,6 +51,20 @@ int main(void) {
         scanf("%d %d", &pktC.x, &pktC.y);
         scanf("%d %d", &pktD.x, &pktD.y);
 
+        /*zamiana kolejnosci punktow*/
+
+        if(gdziePunktC(pktA, pktB, pktC) == gdziePunktC(pktA, pktB, pktD)) {
+
+            Odcinek pierwszy, drugi;
+            wczytajOdcinek(&pierwszy, pktA, pktD);
+            wczytajOdcinek(&drugi, pktB, pktC);
+
+            if(czySiePrzecinaja(pierwszy, drugi))
+                zamienPunkty(&pktC, &pktD);
+
+        } else zamienPunkty(&pktB, &pktC);
+
+        /*obliczanie parametrow odcinkow*/
         wczytajOdcinek(&bok1, pktA, pktB);
         wczytajOdcinek(&bok2, pktB, pktC);
         wczytajOdcinek(&bok3, pktC, pktD);
