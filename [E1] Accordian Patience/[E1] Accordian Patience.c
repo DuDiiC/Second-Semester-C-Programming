@@ -35,24 +35,22 @@ int main(void) {
         while(1) {
             yesOrNo = 0;
             REP(i, howMuch) {
-                if(i >= 3) { /* fits three befofe */
-                    if(s[i][tops[i]].x == s[i-3][tops[i-3]].x ||
-                       s[i][tops[i]].y == s[i-3][tops[i-3]].y) {
-                            /* change position of card */
-                            tops[i-3]++;
-                            s[i-3][tops[i-3]] = s[i][tops[i]];
-                            tops[i]--;
-                            yesOrNo = 1;
-                       }
-                } else if(i >= 1) { /*fits one before */
-                    if(s[i][tops[i]].x == s[i-1][tops[i-1]].x ||
-                       s[i][tops[i]].y == s[i-1][tops[i-1]].y) {
-                            /* change position of card */
-                            tops[i-1]++;
-                            s[i-1][tops[i-1]] = s[i][tops[i]];
-                            tops[i]--;
-                            yesOrNo = 1;
-                       }
+                /* fits three befofe */
+                if(i >= 3 && (s[i][tops[i]].x == s[i-3][tops[i-3]].x ||
+                              s[i][tops[i]].y == s[i-3][tops[i-3]].y)) {
+                    /* change position of card */
+                    tops[i-3]++;
+                    s[i-3][tops[i-3]] = s[i][tops[i]];
+                    tops[i]--;
+                    yesOrNo = 1;
+                } /*fits one before */
+                else if(i >= 1 && (s[i][tops[i]].x == s[i-1][tops[i-1]].x ||
+                                   s[i][tops[i]].y == s[i-1][tops[i-1]].y)) {
+                    /* change position of card */
+                    tops[i-1]++;
+                    s[i-1][tops[i-1]] = s[i][tops[i]];
+                    tops[i]--;
+                    yesOrNo = 1;
                 }
 
                 if(tops[i] == -1) {
@@ -72,9 +70,9 @@ int main(void) {
         if(howMuch-1 == 0) {
             printf("%d pile remaining: ", howMuch);
         } else {
-            printf("%d piles remaining: " );
+            printf("%d piles remaining: ", howMuch);
         }
-        REP(i, howMuch-2) {
+        REP(i, howMuch) {
             printf("%d ", tops[i]+1);
         }
         printf("\n");
