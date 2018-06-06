@@ -44,12 +44,16 @@ int main(void) {
 }
 
 int zuzycieEnergiiNaSekunde(int punkty) {
-    int cyfraPoboru;
-    int zuzycieEnergii = 0;
-    while(punkty > 0) {
-        cyfraPoboru = punkty%10;
-        punkty /= 10;
-        zuzycieEnergii += ileSwieci[cyfraPoboru];
+    if(punkty == 0) return ileSwieci[0]; /* jesli zero */
+    else { /* w preciwnym wypadku zlicz energie ze wszystkich cyfr */
+        int cyfraPoboru;
+        int zuzycieEnergii = 0;
+
+        while(punkty > 0) {
+            cyfraPoboru = punkty%10;
+            punkty /= 10;
+            zuzycieEnergii += ileSwieci[cyfraPoboru];
+        }
+        return zuzycieEnergii;
     }
-    return zuzycieEnergii;
 }
