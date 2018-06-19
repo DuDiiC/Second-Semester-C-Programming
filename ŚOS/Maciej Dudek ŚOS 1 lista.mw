@@ -1,0 +1,362 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Worksheet>
+<Version major="2015" minor="1"/>
+<Label-Scheme value="2" prefix=""/>
+<View-Properties presentation="false" autoexpanding_sections="true" UserProfileName="Maple Default Profile" NumericFormat-ApplyInteger="true" NumericFormat-ApplyRational="true" NumericFormat-ApplyExponent="false">
+</View-Properties>
+<MapleNet-Properties elisiondigitsbefore="100" labelling="true" indentamount="4" elisiontermsthreshold="10000" ansi="false" errorbreak="1" useclientjvm="true" echo="1" imaginaryunit="I" labelwidth="20" unitattributes="&quot;fontweight&quot; = &quot;bold&quot;" contextmenusize="automatic" plotdriver="opengl" elisiondigitsafter="100" plotoutput="terminal" helpbrowser="standard" rtablesize="10" elisiontermsbefore="100" elisiondigitsthreshold="10000" typesetting="standard" plotdevice="inline" verboseproc="1" showassumed="1" quiet="false" errorcursor="false" longdelim="true" plotoptions="" elisiontermsafter="100" screenwidth="79" preplot="" prettyprint="3" displayprecision="-1" screenpixelheight="1080" warnlevel="3" screenheight="25" latexwidth="8.0" postplot="" prompt="&gt; " ShowLabels="true"/>
+<Styles>
+<Font name="Ordered List 1" background="[255,255,255]" bold="false" executable="false" family="Times New Roman" foreground="[0,0,0]" italic="false" opaque="false" readonly="false" size="12" subscript="false" superscript="false" underline="false" placeholder="false"/>
+<Font name="Annotation Text" background="[255,255,255]" bold="false" executable="false" family="Times New Roman" foreground="[0,0,0]" italic="false" opaque="false" readonly="false" size="12" subscript="false" superscript="false" underline="false" placeholder="false"/>
+<Font name="Ordered List 2" background="[255,255,255]" bold="false" executable="false" family="Times New Roman" foreground="[0,0,0]" italic="false" opaque="false" readonly="false" size="12" subscript="false" superscript="false" underline="false" placeholder="false"/>
+<Font name="Ordered List 3" background="[255,255,255]" bold="false" executable="false" family="Times New Roman" foreground="[0,0,0]" italic="false" opaque="false" readonly="false" size="12" subscript="false" superscript="false" underline="false" placeholder="false"/>
+<Font name="Ordered List 4" background="[255,255,255]" bold="false" executable="false" family="Times New Roman" foreground="[0,0,0]" italic="false" opaque="false" readonly="false" size="12" subscript="false" superscript="false" underline="false" placeholder="false"/>
+<Font name="Ordered List 5" background="[255,255,255]" bold="false" executable="false" family="Times New Roman" foreground="[0,0,0]" italic="false" opaque="false" readonly="false" size="12" subscript="false" superscript="false" underline="false" placeholder="false"/>
+<Font name="Author" background="[255,255,255]" bold="false" executable="false" family="Times New Roman" foreground="[0,0,0]" italic="false" opaque="false" readonly="false" size="12" subscript="false" superscript="false" underline="false" placeholder="false"/>
+<Font name="Annotation Title" background="[255,255,255]" bold="true" executable="false" family="Times New Roman" foreground="[0,0,0]" italic="false" opaque="false" readonly="false" size="18" subscript="false" superscript="false" underline="false" placeholder="false"/>
+<Font name="Warning" background="[255,255,255]" bold="false" executable="false" family="Courier New" foreground="[0,0,255]" italic="false" opaque="false" readonly="true" size="12" subscript="false" superscript="false" underline="false" placeholder="false"/>
+<Font name="Caption Reference" background="[255,255,255]" bold="true" executable="false" family="Times New Roman" foreground="[0,0,0]" italic="false" opaque="false" readonly="false" size="12" subscript="false" superscript="false" underline="false" placeholder="false"/>
+<Font name="Maple Input Placeholder" background="[255,255,255]" bold="true" executable="true" family="Courier New" foreground="[200,0,200]" italic="false" opaque="false" readonly="false" size="12" subscript="false" superscript="false" underline="false" placeholder="true"/>
+<Font name="Maple Plot" background="[255,255,255]" bold="false" executable="false" family="Times New Roman" foreground="[0,0,0]" italic="false" opaque="false" readonly="false" size="12" subscript="false" superscript="false" underline="false" placeholder="false"/>
+<Font name="Code" background="[255,255,255]" bold="false" executable="false" family="Courier New" foreground="[255,0,0]" italic="false" opaque="false" readonly="false" size="12" subscript="false" superscript="false" underline="false" placeholder="false"/>
+<Font name="Line Printed Output" background="[255,255,255]" bold="false" executable="false" family="Courier New" foreground="[0,0,255]" italic="false" opaque="false" readonly="true" size="12" subscript="false" superscript="false" underline="false" placeholder="false"/>
+<Font name="Text Output" background="[255,255,255]" bold="false" executable="false" family="Courier New" foreground="[0,0,255]" italic="false" opaque="false" readonly="true" size="12" subscript="false" superscript="false" underline="false" placeholder="false"/>
+<Font name="Diagnostic" background="[255,255,255]" bold="false" executable="false" family="Courier New" foreground="[40,120,40]" italic="false" opaque="false" readonly="true" size="12" subscript="false" superscript="false" underline="false" placeholder="false"/>
+<Font name="2D Inert Output" background="[255,255,255]" bold="false" executable="true" family="Times New Roman" foreground="[144,144,144]" italic="false" opaque="false" readonly="false" size="12" subscript="false" superscript="false" underline="false" placeholder="false"/>
+<Font name="Normal" background="[255,255,255]" bold="false" executable="false" family="Times New Roman" foreground="[0,0,0]" italic="false" opaque="false" readonly="false" size="12" subscript="false" superscript="false" underline="false" placeholder="false"/>
+<Font name="Hyperlink" background="[255,255,255]" bold="false" executable="false" family="Times New Roman" foreground="[0,128,128]" italic="false" opaque="false" readonly="false" size="12" subscript="false" superscript="false" underline="true" placeholder="false"/>
+<Font name="Maple Output" background="[255,255,255]" bold="false" executable="false" family="Times New Roman" foreground="[0,0,0]" italic="false" opaque="false" readonly="false" size="12" subscript="false" superscript="false" underline="false" placeholder="false"/>
+<Font name="Dash Item" background="[255,255,255]" bold="false" executable="false" family="Times New Roman" foreground="[0,0,0]" italic="false" opaque="false" readonly="false" size="12" subscript="false" superscript="false" underline="false" placeholder="false"/>
+<Font name="2D Math" background="[255,255,255]" bold="false" executable="false" family="Times New Roman" foreground="[0,0,0]" italic="false" opaque="false" readonly="false" size="12" subscript="false" superscript="false" underline="false" placeholder="false"/>
+<Font name="Maple Input" background="[0,0,0]" bold="true" executable="true" family="Monospaced" foreground="[255,0,0]" italic="false" opaque="false" readonly="false" size="12" subscript="false" superscript="false" underline="false" placeholder="false"/>
+<Font name="2D Output" background="[0,0,0]" bold="false" executable="false" family="Times New Roman" foreground="[0,0,255]" italic="false" opaque="false" readonly="true" size="12" subscript="false" superscript="false" underline="false" placeholder="false"/>
+<Font name="2D Input" background="[255,255,255]" bold="false" executable="true" family="Times New Roman" foreground="[0,0,0]" italic="false" opaque="false" readonly="false" size="12" subscript="false" superscript="false" underline="false" placeholder="false"/>
+<Font name="HyperlinkError" background="[255,255,255]" bold="false" executable="false" family="Courier New" foreground="[255,0,255]" italic="false" opaque="false" readonly="true" size="12" subscript="false" superscript="false" underline="true" placeholder="false"/>
+<Font name="Header and Footer" background="[255,255,255]" bold="false" executable="false" family="Times New Roman" foreground="[0,0,0]" italic="false" opaque="false" readonly="false" size="10" subscript="false" superscript="false" underline="false" placeholder="false"/>
+<Font name="Error" background="[255,255,255]" bold="false" executable="false" family="Courier New" foreground="[255,0,255]" italic="false" opaque="false" readonly="true" size="12" subscript="false" superscript="false" underline="false" placeholder="false"/>
+<Font name="Title" background="[255,255,255]" bold="true" executable="false" family="Times New Roman" foreground="[0,0,0]" italic="false" opaque="false" readonly="false" size="18" subscript="false" superscript="false" underline="false" placeholder="false"/>
+<Font name="Heading 1" background="[0,0,0]" bold="true" executable="false" family="Serif" foreground="[0,0,0]" italic="false" opaque="false" readonly="false" size="18" subscript="false" superscript="false" underline="false" placeholder="false"/>
+<Font name="Text" background="[0,0,0]" bold="false" executable="false" family="Times New Roman" foreground="[0,0,0]" italic="false" opaque="false" readonly="false" size="12" subscript="false" superscript="false" underline="false" placeholder="false"/>
+<Font name="Bullet Item" background="[255,255,255]" bold="false" executable="false" family="Times New Roman" foreground="[0,0,0]" italic="false" opaque="false" readonly="false" size="12" subscript="false" superscript="false" underline="false" placeholder="false"/>
+<Font name="Heading 4" background="[255,255,255]" bold="false" executable="false" family="Times New Roman" foreground="[0,0,0]" italic="true" opaque="false" readonly="false" size="12" subscript="false" superscript="false" underline="false" placeholder="false"/>
+<Font name="Equation Label" background="[255,255,255]" bold="true" executable="false" family="Times New Roman" foreground="[0,0,0]" italic="false" opaque="false" readonly="false" size="12" subscript="false" superscript="false" underline="false" placeholder="false"/>
+<Font name="Heading 3" background="[255,255,255]" bold="true" executable="false" family="Times New Roman" foreground="[0,0,0]" italic="true" opaque="false" readonly="false" size="14" subscript="false" superscript="false" underline="false" placeholder="false"/>
+<Font name="Heading 2" background="[255,255,255]" bold="true" executable="false" family="Times New Roman" foreground="[0,0,0]" italic="false" opaque="false" readonly="false" size="16" subscript="false" superscript="false" underline="false" placeholder="false"/>
+<Font name="HyperlinkWarning" background="[255,255,255]" bold="false" executable="false" family="Courier New" foreground="[0,0,255]" italic="false" opaque="false" readonly="true" size="12" subscript="false" superscript="false" underline="true" placeholder="false"/>
+<Font name="Dictionary Hyperlink" background="[255,255,255]" bold="false" executable="false" family="Times New Roman" foreground="[147,0,15]" italic="false" opaque="false" readonly="false" size="12" subscript="false" superscript="false" underline="true" placeholder="false"/>
+<Font name="Atomic Variable" background="[255,255,255]" bold="false" executable="false" family="Times New Roman" foreground="[175,0,175]" italic="true" opaque="false" readonly="false" size="12" subscript="false" superscript="false" underline="false" placeholder="false"/>
+<Font name="Caption Text" background="[255,255,255]" bold="true" executable="false" family="Times New Roman" foreground="[0,0,0]" italic="false" opaque="false" readonly="false" size="12" subscript="false" superscript="false" underline="false" placeholder="false"/>
+<Font name="List Item" background="[255,255,255]" bold="false" executable="false" family="Times New Roman" foreground="[0,0,0]" italic="false" opaque="false" readonly="false" size="12" subscript="false" superscript="false" underline="false" placeholder="false"/>
+<Layout name="Ordered List 1" alignment="left" bullet="numeric" firstindent="0" leftmargin="0" rightmargin="0" linespacing="0.0" spaceabove="3" spacebelow="3" linebreak="space" pagebreak-before="false" initial="-1" bulletsuffix=""/>
+<Layout name="Ordered List 2" alignment="left" bullet="alphabetic" firstindent="0" leftmargin="36" rightmargin="0" linespacing="0.0" spaceabove="3" spacebelow="3" linebreak="space" pagebreak-before="false" initial="-1" bulletsuffix=""/>
+<Layout name="Ordered List 3" alignment="left" bullet="roman" firstindent="0" leftmargin="72" rightmargin="0" linespacing="0.0" spaceabove="3" spacebelow="3" linebreak="space" pagebreak-before="false" initial="-1" bulletsuffix=""/>
+<Layout name="Ordered List 4" alignment="left" bullet="ALPHABETIC" firstindent="0" leftmargin="108" rightmargin="0" linespacing="0.0" spaceabove="3" spacebelow="3" linebreak="space" pagebreak-before="false" initial="-1" bulletsuffix=""/>
+<Layout name="Ordered List 5" alignment="left" bullet="ROMAN" firstindent="0" leftmargin="144" rightmargin="0" linespacing="0.0" spaceabove="3" spacebelow="3" linebreak="space" pagebreak-before="false" initial="-1" bulletsuffix=""/>
+<Layout name="Author" alignment="centred" bullet="none" firstindent="0" leftmargin="0" rightmargin="0" linespacing="0.0" spaceabove="8" spacebelow="8" linebreak="space" pagebreak-before="false" initial="0" bulletsuffix=""/>
+<Layout name="Warning" alignment="left" bullet="none" firstindent="0" leftmargin="0" rightmargin="0" linespacing="0.0" spaceabove="0" spacebelow="0" linebreak="space" pagebreak-before="false" initial="0" bulletsuffix=""/>
+<Layout name="Annotation Title" alignment="centred" bullet="none" firstindent="0" leftmargin="0" rightmargin="0" linespacing="0.0" spaceabove="12" spacebelow="12" linebreak="space" pagebreak-before="false" initial="0" bulletsuffix=""/>
+<Layout name="Maple Plot" alignment="centred" bullet="none" firstindent="0" leftmargin="0" rightmargin="0" linespacing="0.0" spaceabove="0" spacebelow="0" linebreak="space" pagebreak-before="false" initial="0" bulletsuffix=""/>
+<Layout name="Line Printed Output" alignment="left" bullet="none" firstindent="0" leftmargin="0" rightmargin="0" linespacing="0.0" spaceabove="0" spacebelow="0" linebreak="any" pagebreak-before="false" initial="0" bulletsuffix=""/>
+<Layout name="Text Output" alignment="left" bullet="none" firstindent="0" leftmargin="0" rightmargin="0" linespacing="0.0" spaceabove="0" spacebelow="0" linebreak="newline" pagebreak-before="false" initial="0" bulletsuffix=""/>
+<Layout name="Diagnostic" alignment="left" bullet="none" firstindent="0" leftmargin="0" rightmargin="0" linespacing="0.0" spaceabove="0" spacebelow="0" linebreak="any" pagebreak-before="false" initial="0" bulletsuffix=""/>
+<Layout name="Normal" alignment="left" bullet="none" firstindent="0" leftmargin="0" rightmargin="0" linespacing="0.0" spaceabove="0" spacebelow="0" linebreak="space" pagebreak-before="false" initial="0" bulletsuffix=""/>
+<Layout name="Maple Output" alignment="centred" bullet="none" firstindent="0" leftmargin="0" rightmargin="0" linespacing="0.5" spaceabove="0" spacebelow="0" linebreak="space" pagebreak-before="false" initial="0" bulletsuffix=""/>
+<Layout name="Dash Item" alignment="left" bullet="dash" firstindent="0" leftmargin="0" rightmargin="0" linespacing="0.0" spaceabove="3" spacebelow="3" linebreak="space" pagebreak-before="false" initial="0" bulletsuffix=""/>
+<Layout name="HyperlinkError" alignment="left" bullet="none" firstindent="0" leftmargin="0" rightmargin="0" linespacing="0.0" spaceabove="0" spacebelow="0" linebreak="space" pagebreak-before="false" initial="0" bulletsuffix=""/>
+<Layout name="Error" alignment="left" bullet="none" firstindent="0" leftmargin="0" rightmargin="0" linespacing="0.0" spaceabove="0" spacebelow="0" linebreak="space" pagebreak-before="false" initial="0" bulletsuffix=""/>
+<Layout name="Title" alignment="centred" bullet="none" firstindent="0" leftmargin="0" rightmargin="0" linespacing="0.0" spaceabove="12" spacebelow="12" linebreak="space" pagebreak-before="false" initial="0" bulletsuffix=""/>
+<Layout name="Heading 1" alignment="left" bullet="none" firstindent="0" leftmargin="0" rightmargin="0" linespacing="0.0" spaceabove="8" spacebelow="4" linebreak="space" pagebreak-before="false" initial="0" bulletsuffix=""/>
+<Layout name="Bullet Item" alignment="left" bullet="dot" firstindent="0" leftmargin="0" rightmargin="0" linespacing="0.0" spaceabove="3" spacebelow="3" linebreak="space" pagebreak-before="false" initial="0" bulletsuffix=""/>
+<Layout name="Heading 4" alignment="left" bullet="none" firstindent="0" leftmargin="0" rightmargin="0" linespacing="0.0" spaceabove="0" spacebelow="0" linebreak="space" pagebreak-before="false" initial="0" bulletsuffix=""/>
+<Layout name="Heading 3" alignment="left" bullet="none" firstindent="0" leftmargin="0" rightmargin="0" linespacing="0.0" spaceabove="0" spacebelow="0" linebreak="space" pagebreak-before="false" initial="0" bulletsuffix=""/>
+<Layout name="Heading 2" alignment="left" bullet="none" firstindent="0" leftmargin="0" rightmargin="0" linespacing="0.0" spaceabove="8" spacebelow="2" linebreak="space" pagebreak-before="false" initial="0" bulletsuffix=""/>
+<Layout name="HyperlinkWarning" alignment="left" bullet="none" firstindent="0" leftmargin="0" rightmargin="0" linespacing="0.0" spaceabove="0" spacebelow="0" linebreak="space" pagebreak-before="false" initial="0" bulletsuffix=""/>
+<Layout name="List Item" alignment="left" bullet="indent" firstindent="0" leftmargin="0" rightmargin="0" linespacing="0.0" spaceabove="3" spacebelow="3" linebreak="space" pagebreak-before="false" initial="0" bulletsuffix=""/>
+<Pencil-style name="Pencil 5" pen-color="[255,0,0]" pen-height="5.0" pen-width="5.0" pen-opacity="1.0"/>
+<Pencil-style name="Pencil 4" pen-color="[0,0,255]" pen-height="3.0" pen-width="3.0" pen-opacity="1.0"/>
+<Pencil-style name="Pencil 3" pen-color="[0,0,0]" pen-height="3.0" pen-width="3.0" pen-opacity="1.0"/>
+<Pencil-style name="Pencil 2" pen-color="[0,0,255]" pen-height="1.0" pen-width="1.0" pen-opacity="1.0"/>
+<Pencil-style name="Pencil 1" pen-color="[0,0,0]" pen-height="1.0" pen-width="1.0" pen-opacity="1.0"/>
+<Highlighter-style name="Highlighter 2" pen-color="[255,204,0]" pen-height="14.0" pen-width="14.0" pen-opacity="0.8"/>
+<Highlighter-style name="Highlighter 1" pen-color="[255,153,255]" pen-height="12.0" pen-width="8.0" pen-opacity="0.8"/>
+<Highlighter-style name="Highlighter 4" pen-color="[0,255,255]" pen-height="32.0" pen-width="32.0" pen-opacity="0.8"/>
+<Highlighter-style name="Highlighter 3" pen-color="[51,255,0]" pen-height="24.0" pen-width="24.0" pen-opacity="0.8"/>
+<Highlighter-style name="Highlighter 5" pen-color="[255,255,0]" pen-height="48.0" pen-width="48.0" pen-opacity="0.8"/>
+</Styles>
+<Startup-Code startupcode=""/>
+<Task-table>
+    <Task-category name="&lt;default&gt;"/>
+</Task-table>
+<Task/>
+<Section collapsed="false" MultipleChoiceAnswerIndex="-1" MultipleChoiceRandomizeChoices="false" TrueFalseAnswerIndex="-1" EssayAnswerRows="5" EssayAnswerColumns="60"><Title>
+<Text-field style="Heading 1" layout="Heading 1">Zadanie 3. Oblicz:</Text-field></Title>
+<Group labelreference="L2">
+<Input>
+<Text-field prompt="&gt; " style="Maple Input" layout="Normal">sqrt((14)!);</Text-field>
+</Input>
+<Output>
+<Text-field style="2D Output" layout="Maple Output"><Equation executable="false" style="2D Output">NiM+SSJhRzYiLCQqJiImITM1IiIiKSIkZSkjIiIiIiIjIiIiIiIi</Equation></Text-field>
+</Output>
+</Group>
+<Group labelreference="L3">
+<Input>
+<Text-field prompt="&gt; " style="Maple Input" layout="Normal">((((8)*((((3)^3)^3-10))^7))/(10)^3);</Text-field>
+</Input>
+<Output>
+<Text-field style="2D Output" layout="Maple Output"><Equation executable="false" style="2D Output">NiMjIkAoKilcKTR6dGRWbVkxKnBcUzYiJEQi</Equation></Text-field>
+</Output>
+</Group>
+<Group labelreference="L4">
+<Input>
+<Text-field prompt="&gt; " style="Maple Input" layout="Normal">evalf((Pi)^exp(1));</Text-field>
+</Input>
+<Output>
+<Text-field style="2D Output" layout="Maple Output"><Equation executable="false" style="2D Output">NiMkIityZCJmQyMhIik=</Equation></Text-field>
+</Output>
+</Group>
+<Group labelreference="L5">
+<Input>
+<Text-field prompt="&gt; " style="Maple Input" layout="Normal">evalf(exp(sqrt(2)));</Text-field>
+</Input>
+<Output>
+<Text-field style="2D Output" layout="Maple Output"><Equation executable="false" style="2D Output">NiMkIit4LkQ4VCEiKg==</Equation></Text-field>
+</Output>
+</Group>
+<Group labelreference="L6">
+<Input>
+<Text-field prompt="&gt; " style="Maple Input" layout="Normal"></Text-field>
+</Input>
+</Group>
+</Section>
+<Section collapsed="false" MultipleChoiceAnswerIndex="-1" MultipleChoiceRandomizeChoices="false" TrueFalseAnswerIndex="-1" EssayAnswerRows="5" EssayAnswerColumns="60"><Title>
+<Text-field style="Heading 1" layout="Heading 1"><Font encoding="UTF-8">Zadanie 4. Sprawd\305\272 kt\303\263re z nast\304\231puj\304\205cych liczb s\304\205 pierwsze:</Font></Text-field></Title>
+<Group labelreference="L7">
+<Input>
+<Text-field style="Text" layout="Normal">123421</Text-field>
+<Text-field prompt="&gt; " style="Maple Input" layout="Normal">isprime(123421);</Text-field>
+</Input>
+<Output>
+<Text-field style="2D Output" layout="Maple Output"><Equation executable="false" style="2D Output">NiNJJmZhbHNlRyUqcHJvdGVjdGVkRw==</Equation></Text-field>
+</Output>
+</Group>
+<Group labelreference="L8">
+<Input>
+<Text-field style="Text" layout="Normal"><Font encoding="UTF-8">czynnikami tej liczby s\304\205:</Font></Text-field>
+<Text-field prompt="&gt; " style="Maple Input" layout="Normal">ifactor(123421);</Text-field>
+</Input>
+<Output>
+<Text-field style="2D Output" layout="Maple Output"><Equation executable="false" style="2D Output">NiMqJi1JIUc2IjYjIiMkKSIiIi1JIUc2IjYjIiUoWyIiIiI=</Equation></Text-field>
+</Output>
+</Group>
+<Group labelreference="L9">
+<Input>
+<Text-field style="Text" layout="Normal">33343</Text-field>
+<Text-field prompt="&gt; " style="Maple Input" layout="Normal">isprime(33343);</Text-field>
+</Input>
+<Output>
+<Text-field style="2D Output" layout="Maple Output"><Equation executable="false" style="2D Output">NiNJJXRydWVHJSpwcm90ZWN0ZWRH</Equation></Text-field>
+</Output>
+</Group>
+<Group labelreference="L10">
+<Input>
+<Text-field style="Text" layout="Normal">3432361</Text-field>
+<Text-field prompt="&gt; " style="Maple Input" layout="Normal">isprime(3432361);</Text-field>
+</Input>
+<Output>
+<Text-field style="2D Output" layout="Maple Output"><Equation executable="false" style="2D Output">NiNJJXRydWVHJSpwcm90ZWN0ZWRH</Equation></Text-field>
+</Output>
+</Group>
+<Group labelreference="L11">
+<Input>
+<Text-field prompt="&gt; " style="Maple Input" layout="Normal"></Text-field>
+</Input>
+</Group>
+</Section>
+<Section collapsed="false" MultipleChoiceAnswerIndex="-1" MultipleChoiceRandomizeChoices="false" TrueFalseAnswerIndex="-1" EssayAnswerRows="5" EssayAnswerColumns="60"><Title>
+<Text-field style="Heading 1" layout="Heading 1"><Font encoding="UTF-8">Zadanie 5. Roz\305\202\303\263\305\274 na czynniki pierwsze nast\304\231puj\304\205ce liczby:</Font></Text-field></Title>
+<Group labelreference="L12">
+<Input>
+<Text-field style="Text" layout="Normal">232413134</Text-field>
+<Text-field prompt="&gt; " style="Maple Input" layout="Normal">ifactor(232413134);</Text-field>
+</Input>
+<Output>
+<Text-field style="2D Output" layout="Maple Output"><Equation executable="false" style="2D Output">NiMqKC1JIUc2IjYjIiIjIiIiLUkhRzYiNiMiI0giIiItSSFHNiI2IyIoQnIrJSIiIg==</Equation></Text-field>
+</Output>
+</Group>
+<Group labelreference="L13">
+<Input>
+<Text-field style="Text" layout="Normal">34!</Text-field>
+<Text-field prompt="&gt; " style="Maple Input" layout="Normal">ifactor((34)!);</Text-field>
+</Input>
+<Output>
+<Text-field style="2D Output" layout="Maple Output"><Equation executable="false" style="2D Output">NiMqOCktSSFHNiI2IyIiIyIjSyIiIiktSSFHNiI2IyIiJCIjOiIiIiktSSFHNiI2IyIiJiIiKCIiIiktSSFHNiI2IyIiKCIiJSIiIiktSSFHNiI2IyIjNiIiJCIiIiktSSFHNiI2IyIjOCIiIyIiIiktSSFHNiI2IyIjPCIiIyIiIi1JIUc2IjYjIiM+IiIiLUkhRzYiNiMiI0IiIiItSSFHNiI2IyIjSCIiIi1JIUc2IjYjIiNKIiIi</Equation></Text-field>
+</Output>
+</Group>
+<Group labelreference="L14">
+<Input>
+<Text-field style="Text" layout="Normal">304!</Text-field>
+<Text-field prompt="&gt; " style="Maple Input" layout="Normal">ifactor((304)!);</Text-field>
+</Input>
+<Output>
+<Text-field style="2D Output" layout="Maple Output"><Equation executable="false" style="2D Output">NiMqaHIpLUkhRzYiNiMiIiMiJCwkIiIiKS1JIUc2IjYjIiIkIiRcIiIiIiktSSFHNiI2IyIiJiIjdSIiIiktSSFHNiI2IyIiKCIjXCIiIiktSSFHNiI2IyIjNiIjSCIiIiktSSFHNiI2IyIjOCIjQyIiIiktSSFHNiI2IyIjPCIjPSIiIiktSSFHNiI2IyIjPiIjOyIiIiktSSFHNiI2IyIjQiIjOCIiIiktSSFHNiI2IyIjSCIjNSIiIiktSSFHNiI2IyIjSiIiKiIiIiktSSFHNiI2IyIjUCIiKSIiIiktSSFHNiI2IyIjVCIiKCIiIiktSSFHNiI2IyIjViIiKCIiIiktSSFHNiI2IyIjWiIiJyIiIiktSSFHNiI2IyIjYCIiJiIiIiktSSFHNiI2IyIjZiIiJiIiIiktSSFHNiI2IyIjaCIiJSIiIiktSSFHNiI2IyIjbiIiJSIiIiktSSFHNiI2IyIjciIiJSIiIiktSSFHNiI2IyIjdCIiJSIiIiktSSFHNiI2IyIjeiIiJCIiIiktSSFHNiI2IyIjJCkiIiQiIiIpLUkhRzYiNiMiIyopIiIkIiIiKS1JIUc2IjYjIiMoKiIiJCIiIiktSSFHNiI2IyIkLCIiIiQiIiIpLUkhRzYiNiMiJC4iIiIjIiIiKS1JIUc2IjYjIiQyIiIiIyIiIiktSSFHNiI2IyIkNCIiIiMiIiIpLUkhRzYiNiMiJDgiIiIjIiIiKS1JIUc2IjYjIiRGIiIiIyIiIiktSSFHNiI2IyIkSiIiIiMiIiIpLUkhRzYiNiMiJFAiIiIjIiIiKS1JIUc2IjYjIiRSIiIiIyIiIiktSSFHNiI2IyIkXCIiIiMiIiIpLUkhRzYiNiMiJF4iIiIjIiIiLUkhRzYiNiMiJGQiIiIiLUkhRzYiNiMiJGoiIiIiLUkhRzYiNiMiJG4iIiIiLUkhRzYiNiMiJHQiIiIiLUkhRzYiNiMiJHoiIiIiLUkhRzYiNiMiJCI9IiIiLUkhRzYiNiMiJCI+IiIiLUkhRzYiNiMiJCQ+IiIiLUkhRzYiNiMiJCg+IiIiLUkhRzYiNiMiJCo+IiIiLUkhRzYiNiMiJDYjIiIiLUkhRzYiNiMiJEIjIiIiLUkhRzYiNiMiJEYjIiIiLUkhRzYiNiMiJEgjIiIiLUkhRzYiNiMiJEwjIiIiLUkhRzYiNiMiJFIjIiIiLUkhRzYiNiMiJFQjIiIiLUkhRzYiNiMiJF4jIiIiLUkhRzYiNiMiJGQjIiIiLUkhRzYiNiMiJGojIiIiLUkhRzYiNiMiJHAjIiIiLUkhRzYiNiMiJHIjIiIiLUkhRzYiNiMiJHgjIiIiLUkhRzYiNiMiJCJHIiIiLUkhRzYiNiMiJCRHIiIiLUkhRzYiNiMiJCRIIiIi</Equation></Text-field>
+</Output>
+</Group>
+<Group labelreference="L15">
+<Input>
+<Text-field prompt="&gt; " style="Maple Input" layout="Normal"></Text-field>
+</Input>
+</Group>
+</Section>
+<Section collapsed="false" MultipleChoiceAnswerIndex="-1" MultipleChoiceRandomizeChoices="false" TrueFalseAnswerIndex="-1" EssayAnswerRows="5" EssayAnswerColumns="60"><Title>
+<Text-field style="Heading 1" layout="Heading 1"><Font encoding="UTF-8">Zadanie 6. Oblicz sum\304\231 wszyskich dzielnik\303\263w pierwszych (z wielokrotno\305\233ciami) liczb:</Font></Text-field></Title>
+<Group labelreference="L16">
+<Input>
+<Text-field style="Text" layout="Normal">5674</Text-field>
+<Text-field prompt="&gt; " style="Maple Input" layout="Normal">L := ifactors(5674);</Text-field>
+</Input>
+<Output>
+<Text-field style="2D Output" layout="Maple Output"><Equation executable="false" style="2D Output">NiM+SSJMRzYiNyQiIiI3JDckIiIjIiIiNyQiJVBHIiIi</Equation></Text-field>
+</Output>
+</Group>
+<Group labelreference="L17">
+<Input>
+<Text-field prompt="&gt; " style="Maple Input" layout="Normal">L[2][2][1]+L[2][1][1];</Text-field>
+</Input>
+<Output>
+<Text-field style="2D Output" layout="Maple Output"><Equation executable="false" style="2D Output">NiMiJVJH</Equation></Text-field>
+</Output>
+</Group>
+<Group labelreference="L18">
+<Input>
+<Text-field prompt="&gt; " style="Maple Input" layout="Normal">M := ifactors(123456);</Text-field>
+</Input>
+<Output>
+<Text-field style="2D Output" layout="Maple Output"><Equation executable="false" style="2D Output">NiM+SSJNRzYiNyQiIiI3JTckIiIjIiInNyQiIiQiIiI3JCIkViciIiI=</Equation></Text-field>
+</Output>
+</Group>
+</Section>
+<Section collapsed="false" MultipleChoiceAnswerIndex="-1" MultipleChoiceRandomizeChoices="false" TrueFalseAnswerIndex="-1" EssayAnswerRows="5" EssayAnswerColumns="60"><Title>
+<Text-field style="Heading 1" layout="Heading 1"><Font encoding="UTF-8">Zadanie 7. Znajd\305\272 kilka liczb pierwszych wi\304\231kszych od 34214245</Font></Text-field></Title>
+<Group labelreference="L19">
+<Input>
+<Text-field prompt="&gt; " style="Maple Input" layout="Normal">nextprime(34214245); nextprime(%); nextprime(%); nextprime(%); nextprime(%);</Text-field>
+</Input>
+<Output>
+<Text-field style="2D Output" layout="Maple Output"><Equation executable="false" style="2D Output">NiMiKWpVQE0=</Equation></Text-field>
+<Text-field style="2D Output" layout="Maple Output"><Equation executable="false" style="2D Output">NiMiKXRVQE0=</Equation></Text-field>
+<Text-field style="2D Output" layout="Maple Output"><Equation executable="false" style="2D Output">NiMiKVJWQE0=</Equation></Text-field>
+<Text-field style="2D Output" layout="Maple Output"><Equation executable="false" style="2D Output">NiMiKWRWQE0=</Equation></Text-field>
+<Text-field style="2D Output" layout="Maple Output"><Equation executable="false" style="2D Output">NiMiKSRSOVUk</Equation></Text-field>
+</Output>
+</Group>
+<Group labelreference="L20">
+<Input>
+<Text-field prompt="&gt; " style="Maple Input" layout="Normal"></Text-field>
+</Input>
+</Group>
+</Section>
+<Section collapsed="false" MultipleChoiceAnswerIndex="-1" MultipleChoiceRandomizeChoices="false" TrueFalseAnswerIndex="-1" EssayAnswerRows="5" EssayAnswerColumns="60"><Title>
+<Text-field style="Heading 1" layout="Heading 1">Zadanie 8. Oblicz:</Text-field></Title>
+<Group labelreference="L21">
+<Input>
+<Text-field prompt="&gt; " style="Maple Input" layout="Normal">evalf(sum((((-1)^k)/(k)^3),k=3..23));
+evalf(Sum((((-1)^k)/(k)^3),k=3..23));
+sum((((-1)^k)/(k)^3),k=3..23);
+Sum((((-1)^k)/(k)^3),k=3..23);</Text-field>
+</Input>
+<Output>
+<Text-field style="2D Output" layout="Maple Output"><Equation executable="false" style="2D Output">NiMkIStVKzZlRSEjNg==</Equation></Text-field>
+<Text-field style="2D Output" layout="Maple Output"><Equation executable="false" style="2D Output">NiMkIStVKzZlRSEjNg==</Equation></Text-field>
+<Text-field style="2D Output" layout="Maple Output"><Equation executable="false" style="2D Output">NiMjIT0kPTxJL2U3bSgqW3NMKzMlIj8rPzJKSCplLjohZWF5JFxgIg==</Equation></Text-field>
+<Text-field style="2D Output" layout="Maple Output"><Equation executable="false" style="2D Output">NiMtSSRTdW1HNiQlKnByb3RlY3RlZEdJKF9zeXNsaWJHNiI2JComKSEiIkkia0c2IiIiIilJImtHNiIiIiQhIiIvSSJrRzYiOyIiJCIjQg==</Equation></Text-field>
+</Output>
+</Group>
+<Group labelreference="L22">
+<Input>
+<Text-field prompt="&gt; " style="Maple Input" layout="Normal">evalf(sum((2)^k,k=-100..100));
+sum((2)^k,k=-100..100);
+Sum((2)^k,k=-100..100);</Text-field>
+</Input>
+<Output>
+<Text-field style="2D Output" layout="Maple Output"><Equation executable="false" style="2D Output">NiMkIisrN0lORCIjQA==</Equation></Text-field>
+<Text-field style="2D Output" layout="Maple Output"><Equation executable="false" style="2D Output">NiMkIisrN0lORCIjQA==</Equation></Text-field>
+<Text-field style="2D Output" layout="Maple Output"><Equation executable="false" style="2D Output">NiMjImhuXkZncWNlbHYpZlNXXT9EQm8lPUNSM14wKXpeKTN3UUAkIkB3YD8ublwsJUgjRy1nXXdFIg==</Equation></Text-field>
+<Text-field style="2D Output" layout="Maple Output"><Equation executable="false" style="2D Output">NiMtSSRTdW1HNiQlKnByb3RlY3RlZEdJKF9zeXNsaWJHNiI2JCkiIiNJImtHNiIvSSJrRzYiOyEkKyIiJCsi</Equation></Text-field>
+</Output>
+</Group>
+<Group labelreference="L23">
+<Input>
+<Text-field prompt="&gt; " style="Maple Input" layout="Normal">product((k-1)^2,k=3..floor(sqrt(127)));
+Product((k-1)^2,k=3..floor(sqrt(127)));</Text-field>
+</Input>
+<Output>
+<Text-field style="2D Output" layout="Maple Output"><Equation executable="false" style="2D Output">NiMiLysrVyo9b0oi</Equation></Text-field>
+<Text-field style="2D Output" layout="Maple Output"><Equation executable="false" style="2D Output">NiMtSShQcm9kdWN0RzYkJSpwcm90ZWN0ZWRHSShfc3lzbGliRzYiNiQqJCksJkkia0c2IiIiIiIiIiEiIiIiIyIiIi9JImtHNiI7IiIkIiM2</Equation></Text-field>
+</Output>
+</Group>
+<Group labelreference="L24">
+<Input>
+<Text-field prompt="&gt; " style="Maple Input" layout="Normal">sum((sin(((((k)*Pi))/12)))^2,k=1..10);
+Sum((sin(((((k)*Pi))/12)))^2,k=1..10);</Text-field>
+</Input>
+<Output>
+<Text-field style="2D Output" layout="Maple Output"><Equation executable="false" style="2D Output">NiMsKCIiJSIiIiokKS1JJHNpbkc2JCUqcHJvdGVjdGVkR0koX3N5c2xpYkc2IjYjLCQqJiMiIiIiIzciIiJJI1BpRyUqcHJvdGVjdGVkRyIiIiIiIiIiIyIiIiIiIiomIiIjIiIiKS1JJHNpbkc2JCUqcHJvdGVjdGVkR0koX3N5c2xpYkc2IjYjLCQqJiMiIiYiIzciIiJJI1BpRyUqcHJvdGVjdGVkRyIiIiIiIiIiIyIiIiIiIg==</Equation></Text-field>
+<Text-field style="2D Output" layout="Maple Output"><Equation executable="false" style="2D Output">NiMtSSRTdW1HNiQlKnByb3RlY3RlZEdJKF9zeXNsaWJHNiI2JCokKS1JJHNpbkc2JCUqcHJvdGVjdGVkR0koX3N5c2xpYkc2IjYjLCQqKCMiIiIiIzciIiJJImtHNiIiIiJJI1BpRyUqcHJvdGVjdGVkRyIiIiIiIiIiIyIiIi9JImtHNiI7IiIiIiM1</Equation></Text-field>
+</Output>
+</Group>
+<Group labelreference="L25">
+<Input>
+<Text-field prompt="&gt; " style="Maple Input" layout="Normal">sum(product((((k+3)^2)/(j+k)),j=2..70),k=4..30);
+Sum(Product((((k+3)^2)/(j+k)),j=2..70),k=4..30);</Text-field>
+</Input>
+<Output>
+<Text-field style="2D Output" layout="Maple Output"><Equation executable="false" style="2D Output">NiMjImJ4NE9lcXlfeHFfM0Q4ZnYrRSZ6aWRUNnNkJD5sa1NYa1F4JkcqKVJLL3hZNChSREQ+bi4vPVx0M3FTanlHWyY+UCJIPy91QDlaZDJDLihwOSQqUXBLIWYjejc3MiJccjZRP01sITRdKT1cJ2ZoNU8sO1ZGbz0iXHMrKysrKysrKyFHPEddNiczK0Y4U0liXiJ5MCo9TncuPW9kcSllLjlPOWc1QkNPJmU5WV00OCR5WXpLYDlsTiRIQE50aiY=</Equation></Text-field>
+<Text-field style="2D Output" layout="Maple Output"><Equation executable="false" style="2D Output">NiMtSSRTdW1HNiQlKnByb3RlY3RlZEdJKF9zeXNsaWJHNiI2JC1JKFByb2R1Y3RHNiQlKnByb3RlY3RlZEdJKF9zeXNsaWJHNiI2JComKSwmSSJrRzYiIiIiIiIkIiIiIiIjIiIiLCZJImpHNiIiIiJJImtHNiIiIiIhIiIvSSJqRzYiOyIiIyIjcS9JImtHNiI7IiIlIiNJ</Equation></Text-field>
+</Output>
+</Group>
+<Group labelreference="L26">
+<Input>
+<Text-field prompt="&gt; " style="Maple Input" layout="Normal"></Text-field>
+</Input>
+</Group>
+</Section>
+<Text-field superscript="false" placeholder="false" executable="false" selection-placeholder="false" italic="false" size="12" bold="false" subscript="false" family="Times New Roman" opaque="false" underline="false" background="[255,255,255]" readonly="false" foreground="[0,0,0]" alignment="left" firstindent="0" spacebelow="0" leftmargin="0" linespacing="0.0" initial="0" linebreak="space" rightmargin="0" bulletsuffix="" spaceabove="0" bullet="none" pagebreak-before="false"></Text-field>
+<Section collapsed="false" MultipleChoiceAnswerIndex="-1" MultipleChoiceRandomizeChoices="false" TrueFalseAnswerIndex="-1" EssayAnswerRows="5" EssayAnswerColumns="60"><Title>
+<Text-field style="Heading 1" layout="Heading 1">Zadanie 9. Ile jest liczb pierwszych mniejszych od 10! ? Wykorzystaj sum.</Text-field></Title>
+<Group labelreference="L27">
+<Input>
+<Text-field prompt="&gt; " style="Maple Input" layout="Normal">sum(isprime(k), k=2..10!);</Text-field>
+</Input>
+<Output>
+<Text-field style="2D Output" layout="Maple Output"><Equation executable="false" style="2D Output">NiMsJiomIig1LFAkIiIiSSZmYWxzZUclKnByb3RlY3RlZEciIiIiIiIqJiInKm9lIyIiIkkldHJ1ZUclKnByb3RlY3RlZEciIiIiIiI=</Equation></Text-field>
+</Output>
+</Group>
+<Group labelreference="L28">
+<Input>
+<Text-field prompt="&gt; " style="Maple Input" layout="Normal"></Text-field>
+</Input>
+</Group>
+</Section>
+<Text-field superscript="false" placeholder="false" executable="false" selection-placeholder="false" italic="false" size="12" bold="false" subscript="false" family="Times New Roman" opaque="false" underline="false" background="[255,255,255]" readonly="false" foreground="[0,0,0]" alignment="left" firstindent="0" spacebelow="0" leftmargin="0" linespacing="0.0" initial="0" linebreak="space" rightmargin="0" bulletsuffix="" spaceabove="0" bullet="none" pagebreak-before="false"></Text-field>
+<Section collapsed="false" MultipleChoiceAnswerIndex="-1" MultipleChoiceRandomizeChoices="false" TrueFalseAnswerIndex="-1" EssayAnswerRows="5" EssayAnswerColumns="60"><Title>
+<Text-field style="Heading 1" layout="Heading 1">Zadanie 10. Wykonaj kolejno operacje:</Text-field></Title>
+<Group labelreference="L29">
+<Input>
+<Text-field prompt="&gt; " style="Maple Input" layout="Normal">k:=sqrt(2) + sin(3):
+t:=((10+sqrt(13)))^2;
+k:=k+10:
+evalf(sqrt(k)+(t)^2);</Text-field>
+</Input>
+<Output>
+<Text-field style="2D Output" layout="Maple Output"><Equation executable="false" style="2D Output">NiM+SSJ0RzYiKiQpLCYiIzUiIiIqJCkiIzgjIiIiIiIjIiIiIiIiIiIjIiIi</Equation></Text-field>
+<Text-field style="2D Output" layout="Maple Output"><Equation executable="false" style="2D Output">NiMkIis3IlxwVSQhIiY=</Equation></Text-field>
+</Output>
+</Group>
+<Group labelreference="L30">
+<Input>
+<Text-field prompt="&gt; " style="Maple Input" layout="Normal"></Text-field>
+</Input>
+</Group>
+</Section>
+<Text-field superscript="false" placeholder="false" executable="false" selection-placeholder="false" italic="false" size="12" bold="false" subscript="false" family="Times New Roman" opaque="false" underline="false" background="[255,255,255]" readonly="false" foreground="[0,0,0]" alignment="left" firstindent="0" spacebelow="0" leftmargin="0" linespacing="0.0" initial="0" linebreak="space" rightmargin="0" bulletsuffix="" spaceabove="0" bullet="none" pagebreak-before="false"></Text-field>
+</Worksheet>
