@@ -1,0 +1,17 @@
+Dla liczb pierwszych do 10^7:
+
+- dla sekwencyjnego:
+real	0m27,843s
+user	0m27,834s
+sys 	0m0,001s
+
+- dla wspolbieżnego:
+real	0m13,276s
+user	0m51,758s
+sys 	0m,1,223s
+
+Dla liczb pierwszych do 10^8:
+
+Czasy obliczania przekraczają 10 minut, przy czym nadal pozostaje zależność,
+że rzeczywisty czas jest dla programu współbieżnego około dwukrotnie krótszy,
+niż dla programu sekwencyjnego.
